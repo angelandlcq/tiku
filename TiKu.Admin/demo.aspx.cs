@@ -18,42 +18,8 @@ namespace TiKu.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-            string[] strArray = { "A、\"中国\"", "B、\r\n10%", "C:\\E", "D、<div><img src='a.jpg' alt=''/><i></i><span><br/>&nbsp;&nbsp;aaa</span></div>" };
-            string strJson = TiKu.Common.JsonHelper.ToJson(strArray);
-            strArray = TiKu.Common.JsonHelper.MapToObject<string[]>(strJson);
 
-            //Response.Write("{");
-            //Response.Write("opions:");
-            //Response.Write(strJson);
-            //Response.Write("}");
-            //return;
-            for (int i = 0; i < strArray.Length; i++)
-            {
-                Response.Write(strArray[i] + "<br/>");
-            }
-            // Response.Write(TiKu.Common.JsonHelper.ToJson(strArray));
-            string filename = DateTime.Now.ToFileTime().ToString() + ".xls";
-            ///filename = TiKu.Common.Util.GetPath("upload/" + filename + ".xls");
-            //FileStream fs = new FileStream(filename, FileMode.CreateNew, FileAccess.ReadWrite);
-            //IWorkbook workbook = new HSSFWorkbook();//创建Workbook对象
-            //ISheet sheet = workbook.CreateSheet("Sheet1");//创建工作表
-            //IRow row = sheet.CreateRow(0);//在工作表中添加一行
-            //ICell cell = row.CreateCell(0);//在行中添加一列
-            //cell.SetCellValue("test");//设置列的内容
-            //workbook.Write(fs);
-            //fs.Close();
-            //fs.Dispose();
-            //DataTable dt = GetData().Tables[0];
-            //MemoryStream ms = ReadToExcel(dt);
-            //Export(Context, filename, ms);
-            //ms.Close();
-            //ms.Dispose();
-            //Response.End();
-            // TiKu.Common.Office.Excel ex = new Common.Office.Excel();
-            //ex.Export(Context, filename, "", null, dt);
-            //TiKu.Common.Office.Word wd = new Common.Office.Word();
-            //wd.Export(dt, Context);
+ 
         }
 
         /// <summary>
@@ -63,6 +29,7 @@ namespace TiKu.Admin
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
+            
         }
 
         ///// <summary>
