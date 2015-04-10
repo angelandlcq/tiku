@@ -18,7 +18,7 @@ namespace TiKu.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
             string[] strArray = { "A、\"中国\"", "B、\r\n10%", "C:\\E", "D、<div><img src='a.jpg' alt=''/><i></i><span><br/>&nbsp;&nbsp;aaa</span></div>" };
             string strJson = TiKu.Common.JsonHelper.ToJson(strArray);
             strArray = TiKu.Common.JsonHelper.MapToObject<string[]>(strJson);
