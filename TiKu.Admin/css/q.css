@@ -1,0 +1,35 @@
+﻿#content {max-width: 1000px;background: #fff;width: 100%;margin: 10px auto;}
+#content .left-frame {width: 30%;height: 369px;border: solid 1px #cfcfcf;float: left;overflow: auto;}
+#content .right-frame {width: 68%;height: auto;border: solid 1px #cfcfcf;float: left;margin-left: 16px;}
+#content .top-frame {width: 100%;border: dashed 1px #cfcfcf;padding-bottom: 20px;}
+#content .top-frame legend {padding: 4px 0;width: 100px;border: solid 1px #cfcfcf;text-align: center;margin-left: 60px;}
+.clear {clear: both;height: 0;}
+#content .course {list-style: none;margin: 10px auto;}
+#content .course li {float: left;border: solid 1px #cfcfcf;padding: 4px 10px;margin: 4px 6px;}
+#content .left-frame h2 {font-size: 14px;width: 100%;padding: 4px 0;text-align: center;background: #efefef;border-bottom: solid 1px #cfcfcf;}
+#content .form-group {color: #333;}
+#content .form-group li {line-height: 30px;padding: 2px 0;overflow: hidden;border-bottom: solid 1px #cfcfcf;width: 100%;border-collapse: collapse;}
+#content .form-group li label {margin: 2px 6px;}
+#content .form-group li .input {height: 30px;width: 80%;}
+#RbtQtype label, #RbtState label {clear: both;float: none;display: inline-block;}
+.editor {height: 200px;}
+#table-items {border: solid 1px #cfcfcf;width: 500px;max-width: 550px;}
+#table-items td {border-bottom:dashed 1px #cfcfcf;line-height: 0;padding: 15px 4px;}
+#table-items td textarea {width: 100%;height: auto;}
+#table-items th {background-color: #F0F0EE;text-align: left;padding: 4px 0;}
+#content .course .checked {border: 1px solid #f06101;font-weight: bold;background: #f06101;}
+#content .course .checked a {color: #fff;}
+.forminfo li h1 {line-height: 34px;}
+.tpl-container {display: none;        }
+#ul-question{margin:10px 20px;border:solid 0px #cfcfcf;}
+#ul-question li{ border-bottom:dashed 0px #cfcfcf;margin:30px auto;}
+#ul-question li:last-child{border:none;}
+#ul-question li table{width:100%;border:dashed 1px #cfcfcf;}
+#ul-question li table td{padding:4px 4px;}
+#ul-question li table td .btn-small{color:#ff0000;font-weight:bold;}
+#ul-question li table td p{margin:2px 30px; word-wrap:break-word;word-break:break-all;white-space:normal;line-height:26px;overflow:auto;}
+#ul-question li table td b{color:#fff;font-size:14px; background:#40AA53;padding:2px 6px;}
+#content img{max-width:100%;}
+.hidden-data{display:none;}
+#profile{display:none;}
+#liQtype{display:none;}

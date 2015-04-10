@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="validate.css" rel="stylesheet" />
+    <script src="../jquery-1.7.2.min.js"></script>
+    <script src="Validform_v5.3.2_min.js"></script>
+</head>
+<body>
+    <form id="form1">
+        <input type="text" name="txtUserName" datatype="s6-9" errormsg="请输入" />
+        <label id=""></label>
+        <input type="submit" value="提交" />
+    </form>
+    <script type="text/javascript">
+        $(document.body).ready(function () {
+
+            $("#form1").Validform({ tiptype: 3 });
+        });
+    </script>
+</body>
+</html>

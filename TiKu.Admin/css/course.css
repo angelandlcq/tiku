@@ -1,0 +1,37 @@
+﻿        #container a:link{color:#333; text-decoration:none;}
+        #container{margin:10px auto;max-width:1000px;font-size:14px;color:#333;border:solid 1px #cfcfcf;background:#fff;} 
+        #container ul{list-style:outside none none;} 
+        #container .course{margin:0 auto;}
+        #container .course li{float:left;padding:10px 20px;border:solid 1px #cfcfcf;margin:10px 10px;font-weight:bold;border-radius:0; }
+        #container .course li a em{
+    background-image: url("../images/tk_main.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 68px;
+    margin: 0 auto;
+    position: relative;
+    width: 68px;
+        }
+/*course category*/
+#container .course .checked{border:solid 1px #F06101;}
+.jianzhu{background-position:-231px -100px;}
+.kj{background-position: -231px -25px;}
+.checked .kj{ background-position:-231px -179px;}
+.course li a span{display: block;line-height: 16px;margin-top: 15px;text-align: center;width: 100%;}
+.zige{ background-position: 0 -25px;}
+.checked .zige{background-position:0 -179px;}
+.waiyu{background-position: -153px -100px;}
+.checked .waiyu{background-position: -153px -254px;}
+.official{ background-position: -76px -25px;}
+.checked official{background-position:-76px -179px;}
+.xuelikaoshi{ background-position: -310px -25px;}
+.checked .xuelikaoshi{background-position:-310px -179px;}
+.checked .jianzhu{background-position:-231px -254px;}
+.checked .official{background-position: -76px -179px;}
+.yiyao{background-position: 0 -100px;}
+.checked .yiyao{background-position: 0 -254px;}
+.course-item{margin:20px auto;border:solid 0px #cfcfcf;display:none;}
+.course-item li{float:left;margin:10px 6px;border:solid 1px #cfcfcf;padding:20px 20px;}
+#container .course-item .checked{border:solid 1px #F06101;font-weight:bold;}
+#container .btn-group{float:right;margin:10px;}
+#container .btn-group input[type='button'] {padding:4px 10px;margin:4px 10px;border:solid 1px #cfcfcf;font-size:12px;font-weight:bold; background:#0488ED;color:#fff;border-radius:10%; }

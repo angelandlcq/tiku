@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TiKu.Model.tb_ActiveCode">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAgAAgAAAACAAQAAAAABQAAAAE=</HashCode>
+      <FileName>tb_ActiveCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiKu.Model.tb_Admin">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAEAgACAEAAACAAAQAICEAAAAIAABAAAAAE=</HashCode>
+      <FileName>tb_Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiKu.Model.tb_AdminLog">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgBAAEAAAAAAAIgACFAAAAAAAABAAAAA=</HashCode>
+      <FileName>tb_AdminLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiKu.Model.tb_AdminPage">
+    <Position X="6.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAwAAAAAAAgACAAAAAACAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>tb_AdminPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiKu.Model.tb_AdminRole" Collapsed="true">
+    <Position X="10" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAgACAAAAAAAAAAAACACAAAAAAFAAAAQE=</HashCode>
+      <FileName>tb_AdminRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiKu.Model.tb_AgentLog">
+    <Position X="7.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAgAAAEAAAAAAAIAAABAABAAAAAAAAAAQ=</HashCode>
+      <FileName>tb_AgentLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiKu.Model.tb_Answer">
+    <Position X="3.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAEAAAAAAAEAgACAAAAgAAAAAAACEAAAAAAABgAAAAE=</HashCode>
+      <FileName>tb_Answer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiKu.Model.tb_CostRecord" Collapsed="true">
+    <Position X="11" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAgAAAEAAAAACAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>tb_CostRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

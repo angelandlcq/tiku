@@ -1,0 +1,45 @@
+﻿.tab-list:after,.tab-list .hd:after,.tab-list .bd:after{display:block;visibility:hidden;clear:both;height:0;content:'.';}
+.tab-list{border:#e3e3e3 solid 1px; background-color:#FFF;-webkit-box-shadow:rgba(0, 0, 0, .1) 0 1px 5px; -moz-box-shadow:rgba(0, 0, 0, .1) 0 1px 5px; box-shadow:rgba(0, 0, 0, .1) 0 1px 5px ;}
+.tab-list ul{border-bottom:#f5f5f5 solid 1px;}
+.tab-list li{ float:left; text-align:center;line-height:33px;}
+.tab-list .f-lf{ text-align:left; font-size:15px;line-height:23px;}
+.tab-list .f-lf a{ display:block; position:relative; z-index:1; height:80%}
+.tab-list .f-lf a:hover{ color:#666; }
+.tab-list .f-lf i{display:block; width:89%; float:left; font-style:normal; padding-top:7px; padding-left:50px}
+.tab-list .f-lf em{ width:20px; height:20px; display:block;position:absolute;  left:20px;top:8px;  background-image:url(http://img2.233.com/wx/tiku/v1/skin/a/tk_gd.png); background-position:0 -18px; background-repeat:no-repeat;}
+.tab-list .f-lf .develop{ background-position: -27px -18px}
+.tab-list .f-lf .no-underclass{background-position:-183px -193px;}
+.tab-list .w1{ }
+.tab-list .w2{  margin-left:10px; }
+.tab-list .w3{ position:relative}
+.tab-list .w4{  margin-right:10px; float:right;_margin-right:7px; display:inline;}
+.tab-list .level-1{  padding-left:30px}
+.tab-list .level-2{   padding-left:60px}
+.tab-list .level-3{  padding-left:60px;}
+.tab-list .knowledge{}
+.tab-list .level-1.knowledge{width:840px;}
+.tab-list .level-2.knowledge{width:810px;}
+.tab-list .hd{ background-color:#f8f8f8; font-size:15px;zoom:1; padding:15px 0; font-weight:bold; position:relative; z-index:2}
+.tab-list .zj-year{ width:170px; margin:0 auto; padding-right:30px; border:#d8d8d8 solid 1px;background-color:#f3f3f3; cursor:pointer; -moz-border-radius: 3px;  -webkit-border-radius: 3px;  border-radius:3px; position:relative}
+.tab-list .zj-year:hover{ background-color:#FFF}
+.tab-list .zj-year-txt{ position:relative}
+.tab-list .zj-year i{ display:block; position:absolute; right:0px; top:0; width:40px; background:url(http://img2.233.com/wx/tiku/v1/skin/a/tk_gd.png) -50px -17px; height:33px;border-left:#d8d8d8 solid 1px}
+.tab-list .zj-year-list{ width:200px; text-indent:20px; position:absolute; left:-1px; top:33px;border:#d8d8d8 solid 1px; background-color:#FFF; z-index:9;-webkit-box-shadow:2px 3px 0px #ebebeb; -moz-box-shadow:2px 3px 0px #ebebeb; box-shadow:2px 3px 0px #ebebeb;}
+.tab-list .zj-year-list a{ width:100%; display:block; line-height:40px; text-align:left;}
+.tab-list .zj-year-list a:hover{ background-color:#f3f3f3}
+.tab-list .bd{ padding:10px 0; line-height:21px}
+.tab-list .bd:hover{background-color:#f9f9f9}
+.tab-list .btn{ border:#cfcfcf solid 1px; margin:0 auto; display:block; width:90px;background-color:#f3f3f3; line-height:33px; white-space:nowrap; -webkit-box-shadow:3px 3px 0px #f2f2f2; -moz-box-shadow:3px 3px 0px #f2f2f2; box-shadow:3px 3px 0px #f2f2f2;}
+.tab-list .btn:hover{ background-color:#f06000; border:#d55500 solid 1px; color:#FFF}
+.tab-list .progress{ float:left; width:100px; height:11px; line-height:11px; background-color:#CCC; text-align:left; display:block; margin-top:10px;}
+.tab-list .progress em{float:left; display:block;height:11px; background:#f06000; clear:both; overflow:hidden;}
+.tab-list .progress-txt{ float:left; padding-left:15px; color:#999}
+.tab-list .orgTxt{ display:block;border:#f8f8f8 solid 1px;}
+.tab-list .orgTxt:hover{border:#d8d8d8 solid 1px;background-color:#fff;-webkit-box-shadow:3px 3px 0px #f2f2f2; -moz-box-shadow:3px 3px 0px #f2f2f2; box-shadow:3px 3px 0px #f2f2f2;}
+.tab-list .btn1{ display:block; border:#FFF solid 1px; width:70px;margin:0 auto; color:#f06000}
+.tab-list .btn1:hover{border:#e3e3e3 solid 1px;background-color:#fff;-webkit-box-shadow:rgba(0, 0, 0, .1) 0 1px 5px; -moz-box-shadow:rgba(0, 0, 0, .1) 0 1px 5px; box-shadow:rgba(0, 0, 0, .1) 0 1px 5px ;clear:both}
+
+.tab-list .why{ width:16px; height:16px; right:22px; top:8px; position:absolute;}
+.tab-list .why .ico{width:16px; height:16px; display:block; background:url(http://img2.233.com/wx/tiku/v1/skin/a/tk_gd.png) -184px  -107px no-repeat; position:relative;}
+.tab-list .why .xxm-poptip{ width:150px; left:-60px; top:30px; text-align:left}
+.tab-list .why .xxm-poptip-arrow{position:absolute;left:60px;}

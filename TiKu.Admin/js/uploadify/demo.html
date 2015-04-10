@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="/js/uploadify/uploadify.css" rel="stylesheet" />
+    <script src="/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="/js/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#file_upload').uploadify({
+                'swf': '/js/uploadify/uploadify.swf',
+                'uploader': '/tools/UpfileTool.ashx',            //指定服务器端上传处理文件，默认‘upload.php’
+                'cancelImage': '/js/uploadify/cancel.png',
+                'formData': { 'folder': 'true' },
+                'removeTimeout': 1,
+                'removeCompleted': false,
+                'buttonText': '',
+                'width': 65,
+                'height': 25,
+                'queueID': 'uploadfileQueue',
+                'fileTypeDesc': '*.gif;*.jpeg;*.png;*.jpg',  //出现在上传对话框中的文件类型描述
+                'fileTypeExts': '*.gif;*.jpeg;*.png;*.jpg', //控制可上传文件的扩展名，启用本项时需同时声明fileDesc
+                'auto': false,                //选定文件后是否自动上传，默认false
+                'multi': false,               //是否允许同时上传多文件，默认false
+                'fileSizeLimit': '6MB',          //控制上传文件的大小，单位byte   500MB
+                'uploadLimit': 1,            //多文件上传时，同时上传文件数目限制
+                'formData': {},
+                'onUploadSuccess': function (file, data, response) {
+                    //alert($.parseJSON(data).msg);
+                    $('#file_upload').uploadify('cancel');
+                    $("#btnUpload").hide();
+                    $('#file_upload').uploadify('disable', true);
+                },
+                'onUploadError': function (file, errorCode, errorMsg, errorString) {
+                    if (errorString == "Cancelled") { return; }
+                    alert(file.name + ' 上传失败。详细信息: ' + errorString);
+                },
+                onCancel: function (file) {
+                    $("#btnUpload").hide();
+                    //console.log("取消");
+                }, //文件被移除出队列时触发,返回file参数
+                onClearQueue: function (queueItemCount) {
+
+                },
+                onSelect: function (file) { $("#btnUpload").show(); }
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="form1">
+        <input id="file_upload" name="file_upload" type="file" multiple="true" />
+        <div id="uploadfileQueue"></div>
+        <input type="button" value="上传" id="btnUpload" style="display:none;" onclick="$('#file_upload').uploadify('upload');" />
+    </form>
+</body>
+</html>

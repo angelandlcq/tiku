@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>试题信息</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/select.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/js/select-ui.min.js"></script>
+    <script src="/js/lhgdialog/lhgdialog.js?skin=iblue" type="text/javascript"></script>
+    <script src="/js/base.js" type="text/javascript"></script> 
+    <link href="../js/validateform/validate.css" rel="stylesheet" />
+    <link href="../css/zTreeStyle/zTreeStyle.css" rel="stylesheet" />
+    <link href="../plugin/kindeditor-4.1.7/themes/default/default.css" rel="stylesheet" />
+    <link href="../css/q.css" rel="stylesheet" />
+    <script src="../js/validateform/Validform_v5.3.2_min.js" type="text/javascript"></script>
+    <script src="../js/baiduTemplate.js" type="text/javascript"></script>
+</head>
+<body>
+    <form>
+    <div id="content">
+        <fieldset class="top-frame">
+            <legend>科目</legend>
+            <ul class="course">
+                <li class="checked"><a href="#">一级建造师</a></li>
+                <li><a href="#">一级建造师</a></li>
+                <li><a href="#">一级建造师</a></li>
+                <li><a href="#">一级建造师</a></li>
+                <li><a href="#">一级建造师</a></li>
+                <li><a href="#">一级建造师</a></li>
+                <li><a href="#">一级建造师</a></li>
+                <li><a href="#">一级建造师</a></li>
+                <li><a href="#">一级建造师</a></li>
+                <li><a href="#">一级建造师</a></li>
+                <li><a href="#">一级建造师</a></li>
+                <li><a href="#">一级建造师</a></li>
+            </ul>
+            <div class="clear"></div>
+        </fieldset>
+        <div style="margin:10px auto;">
+            <div class="left-frame">
+                <h2>《章节考点》</h2>
+                <div id="chapterList" class="ztree">
+
+                </div>
+            </div>
+            <div class="right-frame">
+                <ul class="forminfo">
+                    <li><label>科  目：</label><h1>一级建造师市政专业</h1></li>
+                    <li>
+                        <label>题  型：<b>*</b></label>
+                        <table id="RbtQtype">
+                            <tbody>
+                                <tr>
+                                    <td><input type="radio" value="1" name="RbtQtype" id="RbtQtype_0"><label for="RbtQtype_0">单选</label></td>
+                                    <td><input type="radio" value="2" name="RbtQtype" id="RbtQtype_1"><label for="RbtQtype_1">多选</label></td>
+                                    <td><input type="radio" value="4" name="RbtQtype" id="RbtQtype_2"><label for="RbtQtype_2">简答</label></td>
+                                    <td><input type="radio" value="3" name="RbtQtype" id="RbtQtype_3"><label for="RbtQtype_3">判断</label></td>
+                                    <td><input type="radio" value="5" name="RbtQtype" id="RbtQtype_4"><label for="RbtQtype_4">分析</label></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li id="profile">
+                        <label>材  料：<b>*</b></label>
+                        <textarea class="textinput editor" style="width:100px;" id="txtContent" runat="server"></textarea>
+                        <div class="clear"></div>
+                    </li>
+                    <li style="text-align:center;">
+                        <input type="button" value="录入试题信息" onclick="q.OpenQWin();" class="btn" />
+                    </li>
+                </ul>
+                <!--已经录入的信息-->
+                <ul id="ul-question"></ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    </form>
+    <!--模板-->
+    <div class="tpl-container">
+        <table id="table-tpl-option">
+            <tr>
+                <td><textarea rows="4" cols="100"></textarea></td>
+                <td width="80px"><a href="javascript:void(0);" class="btnRemove">移除</a></td>
+            </tr>
+        </table>
+    </div>
+    <!--试题模板-->
+    <script type="text/html" id="tpl-question">
+        <li>
+            <table cellspacing="0" cellpadding="0">
+                <tr><td><!=QNumber!>、题 型：<strong><!=qtype.names!></strong></td></tr>
+                <tr><td>问 题：<!=question!></td></tr>
+                <tr><td><!for(var i=0;i<items.length;i++){!><p><!=items[i]!></p><!}!></td></tr>
+                <tr><td>答 案：<p><!=answer!></p></td></tr>
+                <tr><td align="right">
+                        <a href="javascript:void(null);" class="btn-small btn-edit" onclick="q.Edit(this);">修改</a>|
+                        <a href="javascript:void(null);" class="btn-small" onclick="q.RemoveQ(this);">移除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hidden-data">
+                        <!--问题-->
+                        <textarea name="question"></textarea>
+                        <!--题型-->
+                        <input name="qtype" type="hidden" value="<!=qtype.id!>" />
+                        <!--选项 多个选项中间，用&分割-->
+                        <textarea name="options"><!for(var i in items){!><!=items[i]+'&'!><!}!></textarea>
+                        <!--答案-->
+                        <textarea name="answer"><!=answer!></textarea>
+                        <!--解析-->
+                        <textarea name="analyze"><!=analyze!></textarea>
+                        <!--分值-->
+                        <input type="hidden" name="score" value="<!=score!>"/>
+                        <!--状态-->
+                        <input type="hidden" name="state" value="<!=state!>" />
+                        <!--排序-->
+                        <input type="hidden" name="sort" value="<!=sort!>" />
+                        <!--级别-->
+                        <input type="hidden" name="level" value="<!=level!>" />
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </script>
+    <script src="../js/jquery.ztree.core-3.5.min.js" type="text/javascript"></script>
+    <script src="../plugin/kindeditor-4.1.7/kindeditor-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //原理很简单，就是在body的onbeforeunload事件绑定函数，代码如下：       
+        document.body.onbeforeunload = function (event)
+        {
+            var c = event || window.event;
+            if (/webkit/.test(navigator.userAgent.toLowerCase())) {return "离开页面将导致数据丢失！";}
+            else {c.returnValue = "离开页面将导致数据丢失！";}
+        }
+        $(document).ready(function (e) { $(".select1").uedSelect({ width: 345 }); });
+        var setting = {
+            data: { simpleData: { enable: true } },
+            async: {
+                dataType: "json",
+                url: "/tools/AjaxSubmit.ashx?action=getChaptersJson",
+                type: "post",
+                enable: true
+            },
+            callback: {
+                onClick: function (event, treeId, treeNode) { }
+            }
+        };
+
+        $(document).ready(function () {
+            $.fn.zTree.init($("#chapterList"), setting);
+            //选择课程
+            $(".course li").bind("click", function () { $(this).addClass("checked").siblings().removeClass("checked"); });
+            //题型
+            $("#RbtQtype input[name='RbtQtype']").bind("click", function ()
+            {
+                if (this.id.substr(this.id.length - 1, 1) == "4") {$("#profile").show();} else {$("#profile").hide();}
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        var editor;
+        KindEditor.ready(function (K) {
+            editor = K.create('textarea.editor', {
+                resizeType: 1,
+                resizeMode: 1,
+                width: 540,
+                minWidth: 540,
+                height:300,
+                allowPreviewEmoticons: false,
+                allowImageUpload: false,
+                items: [
+                    'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                    'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        (function (w) {
+            //重置js模板引擎开始、结束标记
+            baidu.template.LEFT_DELIMITER = "<!";
+            baidu.template.RIGHT_DELIMITER = "!>";
+            w.q = {
+                Context: null,
+                Current:null,
+                //弹出录入信息窗口
+                OpenQWin: function (arg) {
+                    $.dialog({
+                        title: "录入试题信息",
+                        content: "url:question.html?"+(arg?arg:""),
+                        close: true,
+                        height:600,
+                        width:680,
+                        max:false,
+                        min:false,
+                        lock:true
+                    });
+                },
+                //移除问题
+                RemoveQ: function (current) { if (window.confirm("确定要删除该项吗?")) { $(current).parent().parent().parent().parent().parent().remove(); }}
+                //录入问题信息
+                , AddQ: function (data,callback)
+                {
+                    baidu.template.ESCAPE = false;
+                    data.QNumber = $("#ul-question li").length+1;
+                    var _html = baidu.template("tpl-question", data);
+                    var $html = $(_html);
+                    $html.find(".btn-edit").data("question",data);
+                    $("#ul-question").append($html);
+                    if (callback) { callback();}
+                       
+                },
+                //关闭窗口
+                CloseWin: function ()
+                {
+                    var list = $.dialog.list; for (var i in list) { list[i].close(); }
+                    q.Context = null;
+                },
+                //编辑试题信息
+                Edit: function (obj)
+                {
+                    q.Context = $(obj).data("question");
+                    q.OpenQWin("action=edit");
+                    q.Current = $(obj).parent().parent().parent().parent().parent();
+                },
+                //保存修改数据
+                SaveModify: function (data,callback)
+                {
+                    data.QNumber = q.Current.index()+1;
+                    var _html = baidu.template("tpl-question",data);
+                    var $html = $(_html);
+                    $html.find(".btn-edit").data("question", data);
+                    q.Current.replaceWith($html);
+                    //回调函数
+                    if (callback) { callback(q.Current); }
+                },
+                //显示材料
+                ShowContent: function () {$("#profile").show();}
+            };
+        }(window));
+    </script>
+</body>
+</html>

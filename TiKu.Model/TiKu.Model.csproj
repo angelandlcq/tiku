@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F2CB328-2C70-4BC8-8720-1D50AD378B1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TiKu.Model</RootNamespace>
+    <AssemblyName>TiKu.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tb_ActiveCode.cs" />
+    <Compile Include="tb_Admin.cs" />
+    <Compile Include="tb_AdminLog.cs" />
+    <Compile Include="tb_AdminPage.cs" />
+    <Compile Include="tb_AdminRole.cs" />
+    <Compile Include="tb_Advertor.cs" />
+    <Compile Include="tb_AdvertorPlace.cs" />
+    <Compile Include="tb_Agent.cs" />
+    <Compile Include="tb_AgentLog.cs" />
+    <Compile Include="tb_AgentRecharge.cs" />
+    <Compile Include="tb_Answer.cs" />
+    <Compile Include="tb_Area.cs" />
+    <Compile Include="tb_Chapter.cs" />
+    <Compile Include="tb_ChapterQuestion.cs" />
+    <Compile Include="tb_Collection.cs" />
+    <Compile Include="tb_Correct.cs" />
+    <Compile Include="tb_CostRecord.cs" />
+    <Compile Include="tb_CourseCategory.cs" />
+    <Compile Include="tb_CourseInfo.cs" />
+    <Compile Include="tb_Dictionay.cs" />
+    <Compile Include="tb_Difficulty.cs" />
+    <Compile Include="tb_DoneQuestion.cs" />
+    <Compile Include="tb_ErrorQuestion.cs" />
+    <Compile Include="tb_Feedback.cs" />
+    <Compile Include="tb_level.cs" />
+    <Compile Include="tb_Material.cs" />
+    <Compile Include="tb_NavType.cs" />
+    <Compile Include="tb_Note.cs" />
+    <Compile Include="tb_Option.cs" />
+    <Compile Include="tb_Order.cs" />
+    <Compile Include="tb_Question.cs" />
+    <Compile Include="tb_QuestionState.cs" />
+    <Compile Include="tb_SEO.cs" />
+    <Compile Include="tb_SuitCompages.cs" />
+    <Compile Include="tb_Test.cs" />
+    <Compile Include="tb_ThePapers.cs" />
+    <Compile Include="tb_User.cs" />
+    <Compile Include="tb_UserBalance.cs" />
+    <Compile Include="tb_UserLearnChapter.cs" />
+    <Compile Include="tb_UserLogo.cs" />
+    <Compile Include="tb_UserRecharge.cs" />
+    <Compile Include="tb_WebSet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TiKu.DataDriver\TiKu.DataDriver.csproj">
+      <Project>{25B3DEE8-44E1-4495-B45E-FF426BC65963}</Project>
+      <Name>TiKu.DataDriver</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

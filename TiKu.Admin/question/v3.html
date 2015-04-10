@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>课程选择</title>
+<link href="../css/common.css" rel="stylesheet" />
+<style type="text/css">
+#container {width: 700px;margin: 0 auto;max-width: 1000px;min-width: 700px;font-size: 14px;color: #000;border: dashed 1px #3C95C8;margin-top: 10px;}
+#container .table-select{width:100%;margin:10px auto;}
+#container .table-select th{}
+#container .table-select textarea{width:100%;min-height:100px;}
+#container .table-select td{padding:4px 10px;}
+#container .multi-select{ height:300px;width:100%;margin:10px 0;}
+#container input[type='button']{border:solid 1px #cfcfcf;padding:6px 10px;color:#333;background:#efefef;}
+#container label{padding-right:10px;}
+</style>
+</head>
+<body>
+    <div id="container">
+        <table class="table-select" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th width="32%">分类</th>
+                    <th width="32%">课程</th>
+                    <th width="36%">章节考点</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><select size="1" multiple="multiple" class="multi-select">
+                        <option>建筑类</option>
+                        <option>医学类</option>
+                        <option>资格类</option>
+                        </select></td>
+                    <td><select multiple="multiple" class="multi-select">
+                            <option>一级建造师</option>
+                            <option>二级建造师</option>
+                        </select></td>
+                    <td><select multiple="multiple" class="multi-select"></select></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label>题  型：</label>
+                        <input type="radio" name="=RbtQType" /><label for="">单选</label>
+                        <input type="radio" name="=RbtQType" /><label for="">多选</label>
+                        <input type="radio" name="=RbtQType" /><label for="">判断</label>
+                        <input type="radio" name="=RbtQType" /><label for="">简答</label>
+                        <input type="radio" name="=RbtQType" /><label for="">分析</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <textarea></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="button" value="确认选择，进行下一步" class=""/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

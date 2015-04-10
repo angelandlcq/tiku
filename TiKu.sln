@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A0FFFB01-6DF2-4C0F-A329-2FCE6F6D611F}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TiKu.vsmdi = TiKu.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{CA0DB28A-A16A-4D84-A521-1E041B0C671B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiKu.Agent", "TiKu.Agent\TiKu.Agent.csproj", "{1BE51616-69A8-4771-8C4A-26E2B480B2CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiKu.Admin", "TiKu.Admin\TiKu.Admin.csproj", "{E1723681-838A-4D7D-853F-307F8C1D40DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiku.DB", "Tiku.DB\Tiku.DB.csproj", "{5E5D61C7-24CA-405E-A3C9-9E1ACA3C5919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiKu.Common", "Tiku.Common\TiKu.Common.csproj", "{24EDEBE4-A41D-4D4A-BE44-00B849567E04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiKu.Model", "TiKu.Model\TiKu.Model.csproj", "{4F2CB328-2C70-4BC8-8720-1D50AD378B1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiKu.DataDriver", "TiKu.DataDriver\TiKu.DataDriver.csproj", "{25B3DEE8-44E1-4495-B45E-FF426BC65963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiKu.WebUI", "TiKu.WebUI\TiKu.WebUI.csproj", "{4C725B88-1366-4183-9CDC-5EF4E1C13E61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiKu.Test", "TiKu.Test\TiKu.Test.csproj", "{5DCD7694-E51D-4905-A55B-80945C184CE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiKu.BLL", "TiKu.BLL\TiKu.BLL.csproj", "{99B672C9-301C-4E76-B1ED-BF8E620AEAF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA0DB28A-A16A-4D84-A521-1E041B0C671B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0DB28A-A16A-4D84-A521-1E041B0C671B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0DB28A-A16A-4D84-A521-1E041B0C671B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0DB28A-A16A-4D84-A521-1E041B0C671B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BE51616-69A8-4771-8C4A-26E2B480B2CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE51616-69A8-4771-8C4A-26E2B480B2CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE51616-69A8-4771-8C4A-26E2B480B2CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE51616-69A8-4771-8C4A-26E2B480B2CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1723681-838A-4D7D-853F-307F8C1D40DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1723681-838A-4D7D-853F-307F8C1D40DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1723681-838A-4D7D-853F-307F8C1D40DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1723681-838A-4D7D-853F-307F8C1D40DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E5D61C7-24CA-405E-A3C9-9E1ACA3C5919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E5D61C7-24CA-405E-A3C9-9E1ACA3C5919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E5D61C7-24CA-405E-A3C9-9E1ACA3C5919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E5D61C7-24CA-405E-A3C9-9E1ACA3C5919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24EDEBE4-A41D-4D4A-BE44-00B849567E04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24EDEBE4-A41D-4D4A-BE44-00B849567E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24EDEBE4-A41D-4D4A-BE44-00B849567E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24EDEBE4-A41D-4D4A-BE44-00B849567E04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F2CB328-2C70-4BC8-8720-1D50AD378B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2CB328-2C70-4BC8-8720-1D50AD378B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F2CB328-2C70-4BC8-8720-1D50AD378B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F2CB328-2C70-4BC8-8720-1D50AD378B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25B3DEE8-44E1-4495-B45E-FF426BC65963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25B3DEE8-44E1-4495-B45E-FF426BC65963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25B3DEE8-44E1-4495-B45E-FF426BC65963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25B3DEE8-44E1-4495-B45E-FF426BC65963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C725B88-1366-4183-9CDC-5EF4E1C13E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C725B88-1366-4183-9CDC-5EF4E1C13E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C725B88-1366-4183-9CDC-5EF4E1C13E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C725B88-1366-4183-9CDC-5EF4E1C13E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DCD7694-E51D-4905-A55B-80945C184CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DCD7694-E51D-4905-A55B-80945C184CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DCD7694-E51D-4905-A55B-80945C184CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DCD7694-E51D-4905-A55B-80945C184CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B672C9-301C-4E76-B1ED-BF8E620AEAF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B672C9-301C-4E76-B1ED-BF8E620AEAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B672C9-301C-4E76-B1ED-BF8E620AEAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B672C9-301C-4E76-B1ED-BF8E620AEAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = TiKu.vsmdi
+	EndGlobalSection
+EndGlobal
